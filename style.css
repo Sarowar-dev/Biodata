@@ -153,7 +153,9 @@ li{
 }
 .psnl_dtls ul li:hover{
     border: black;
-    background-color: rgba(5, 204, 249, 0.985);
+    background-color: #E6E6FA;
+    color: #4B0082;
+    font-size: 1rem;
     text-align: center;
     align-content: center;
     font-family: 'Courier New', Courier, monospace;
@@ -163,7 +165,7 @@ li{
     height: 60px;
     box-sizing: border-box;
     font-style: italic;
-    box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.631);
+    box-shadow: 0 -2px 10px #4169E1;
 }
 
 
@@ -176,7 +178,9 @@ li{
 }
 .fmly_dtls ul li:hover{
     border: black;
-    background-color: rgba(33, 237, 11, 0.944);
+    background-color: #FFFFF0;
+    color: #800000;
+    font-size: 1rem;
     text-align: center;
     align-content: center;
     border-radius: 10px;
@@ -200,7 +204,8 @@ li{
 }
 .cnt_per:hover{
     border: black;
-    background-color: rgba(33, 237, 11, 0.944);
+    background-color: #E6E6FA;
+    color: #2F4F4F;
     text-align: center;
     align-content: center;
     border-radius: 10px;
@@ -212,6 +217,7 @@ li{
     font-style: italic;
     box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
     font-weight: bolder;
+    font-size: 1rem;
 }
 .cnt_num {
     transition: 0.4s ease-in;
@@ -221,7 +227,8 @@ li{
 }
 .cnt_num:hover{
     border: black;
-    background-color: rgba(33, 237, 11, 0.944);
+    background-color: #E6E6FA;
+    color: #2F4F4F;
     text-align: center;
     align-content: center;
     border-radius: 10px;
@@ -231,8 +238,9 @@ li{
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
+    box-shadow: 0 -2px 10px rgba(7, 248, 19, 0.948);
     font-weight: bolder;
+    font-size: 1rem;
 }
 
 .residential{
@@ -251,8 +259,11 @@ li{
 }
 .residential:hover{
     cursor: pointer;
-    background-color: #19e9e9;
+    background-color: #FFFFFF;
+    color: #800020;
     box-shadow: 0 -2px 10px rgba(9, 204, 221, 0.693);
+    font-size: 0.8rem;
+    height: 200px;
 }
 /* space */
 
@@ -361,6 +372,8 @@ footer p{
     }
     .fmly_dtls ul li:hover{
         width: auto;
+        font-size: 1rem;
+        font-weight: bolder;
     }
     /* for personal details */
     .psnl_dtls{
@@ -382,6 +395,8 @@ footer p{
     }
     .psnl_dtls ul li:hover{
         width: auto;
+        font-size: 1rem;
+        font-weight: bolder;
     }
     /* for space */
     .space{
