@@ -1,0 +1,401 @@
+body{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    overflow-y:auto;
+}
+
+
+/* For heading */
+.psnl_dtls h2{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    text-align:center;
+    border-radius:5px;
+    position: relative;
+}
+
+
+.fmly_dtls h2{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    text-align:center;
+    border-radius:5px;
+    position: relative;
+}
+.contact_dtls h2{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(9, 9, 9);
+    text-align:center;
+    border-radius:5px;
+    position: relative;
+}
+
+
+/* glowing for personal details*/
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.psnl_dtls h2::after, .psnl_dtls h2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 0%,#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1px;
+    border-radius: 5px;
+    animation: 0.5s spin linear infinite;
+}
+.psnl_dtls h2::before{
+    filter: blur(0.2rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+/* glowing for family details*/
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.fmly_dtls h2::after, .fmly_dtls h2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 0%,#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 5px;
+    animation: 0.5s spin linear infinite;
+}
+.fmly_dtls h2::before{
+    filter: blur(0.2rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+/* glowing for contact details*/
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.contact_dtls h2::after, .contact_dtls h2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 0%,#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 5px;
+    animation: 0.5s spin linear infinite;
+}
+.contact_dtls h2::before{
+    filter: blur(0.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+/* For list items */
+li{
+    list-style:none;
+    font-size: larger;
+    font-weight:normal;
+    font-family: arial, sans-serif;
+}
+
+
+/* hover personal details */
+.psnl_dtls ul li{
+    transition: 0.4s ease-in;
+    box-sizing: border-box;
+    height: 40px;
+    width: 50%;
+}
+.psnl_dtls ul li:hover{
+    border: black;
+    background-color: rgba(5, 204, 249, 0.985);
+    text-align: center;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    box-sizing: border-box;
+    font-style: italic;
+    box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.631);
+}
+
+
+/* hover family details */
+.fmly_dtls ul li{
+    transition: 0.4s ease-in;
+    box-sizing: border-box;
+    height: 40px;
+    width: 50%;
+}
+.fmly_dtls ul li:hover{
+    border: black;
+    background-color: rgba(33, 237, 11, 0.944);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
+}
+
+
+/* hover contact details */
+
+.cnt_per {
+    transition: 0.4s ease-in;
+    box-sizing: border-box;
+    height: 40px;
+    width: 50%;
+}
+.cnt_per:hover{
+    border: black;
+    background-color: rgba(33, 237, 11, 0.944);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    height: 60px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
+    font-weight: bolder;
+}
+.cnt_num {
+    transition: 0.4s ease-in;
+    box-sizing: border-box;
+    height: 40px;
+    width: 50%;
+}
+.cnt_num:hover{
+    border: black;
+    background-color: rgba(33, 237, 11, 0.944);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    height: 70px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
+    font-weight: bolder;
+}
+
+.residential{
+    border: black;
+    background-color: rgba(33, 237, 11, 0.944);
+    border-radius: 10px;
+    width: 50%;
+    height: 350px;
+    font-weight: 1500;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    box-shadow: 0 -2px 10px rgba(4, 204, 14, 0.693);
+    transition: 0.3s ease-in;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.residential:hover{
+    cursor: pointer;
+    background-color: #19e9e9;
+    box-shadow: 0 -2px 10px rgba(9, 204, 221, 0.693);
+}
+/* space */
+
+.space{
+    height: 150px;
+}
+
+/* Footer */
+footer{
+    background: #111;
+    padding: 20px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Footer glowing */
+footer p{
+    color: #00ffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #0ff;
+    font-family: 'Great Vibes', cursive;
+    padding-right: 50px;
+}
+
+/* personals details */
+.psnl_dtls ul{
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(6, 133, 224, 0.192);
+    border-radius: 20px;
+}
+
+/* family details */
+.fmly_dtls ul{
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(6, 133, 224, 0.192);
+    border-radius: 20px;
+}
+
+/* contact details */
+.contact_dtls ul{
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(6, 133, 224, 0.192);
+    border-radius: 20px;
+    height: 530px;
+}
+
+/* for media query */
+
+@media (max-width:600px) 
+{
+    body{
+        font-size: 8px;
+    }
+    /* For contact details */
+    .contact_dtls{
+        width: 95%;
+        margin-left: 8px;
+    }
+    .contact_dtls ul{
+        text-overflow: ellipsis;
+        height: 350px;
+    }
+    .residential{
+        width: auto;
+        height: 170px;
+        padding-left: 20px;
+        padding-top: 20px;
+        font-weight: bolder;
+    }
+    .cnt_num{
+        width: auto;
+    }
+    .contact_dtls h2{
+        width: 88%;
+        margin-left: 20px;
+        align-content: center;
+    }
+    /* For family details */
+    .fmly_dtls{
+        width: 95%;
+        margin-left: 8px;
+    }
+    .fmly_dtls ul{
+        text-overflow: ellipsis;
+        height: 350px;
+        width: auto;
+    }
+    .fmly_dtls ul li{
+        width: auto;
+    }
+    .fmly_dtls h2{
+        width: 88%;
+        margin-left: 20px;
+        align-content: center;
+    }
+    .fmly_dtls ul li:hover{
+        width: auto;
+    }
+    /* for personal details */
+    .psnl_dtls{
+        width: 95%;
+        margin-left: 8px;
+    }
+    .psnl_dtls ul{
+        text-overflow: ellipsis;
+        height: 350px;
+        width: auto;
+    }
+    .psnl_dtls ul li{
+        width: auto;
+    }
+    .psnl_dtls h2{
+        width: 88%;
+        margin-left: 20px;
+        align-content: center;
+    }
+    .psnl_dtls ul li:hover{
+        width: auto;
+    }
+    /* for space */
+    .space{
+        height: 150px;
+    }
+
+    /* for footer */
+    footer {
+        height: 10px;
+        padding-bottom: 100px;
+        margin-left: -10px;
+        margin-bottom: -60px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+}
